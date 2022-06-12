@@ -4,9 +4,8 @@
 	"description": "StimulusJS for Tailwind Styled Components",
 	"main": "dist/stimulus-tailwind-components.min.js",
 	"scripts": {
-		"build": "rimraf lib && node ./esbuild.js",
-		"prepublish": "yarn build",
-		"test": "NODE_ENV=test jest"
+		"build": "rimraf dist && node ./esbuild.js",
+		"prepublish": "yarn build"
 	},
 	"repository": {
 		"type": "git",
@@ -27,16 +26,6 @@
 		"url": "https://github.com/chiefpansancolt/stimulus-tailwind-components/issues"
 	},
 	"homepage": "https://github.com/chiefpansancolt/stimulus-tailwind-components#readme",
-	"jest": {
-		"testRegex": ".*_test.js",
-		"roots": [
-			"__tests__"
-		],
-		"moduleDirectories": [
-			"node_modules",
-			"src"
-		]
-	},
 	"dependencies": {
 		"@hotwired/stimulus": "^3.0.1"
 	},
@@ -44,10 +33,7 @@
 		"@hotwired/stimulus": "^3.0.1"
 	},
 	"devDependencies": {
-		"@babel/plugin-transform-runtime": "^7.18.2",
 		"esbuild": "^0.14.43",
-		"jest": "^28.1.1",
-		"mutationobserver-shim": "^0.3.7",
 		"rimraf": "^3.0.2"
 	}
 }
