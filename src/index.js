@@ -1,1 +1,3 @@
-export { default as Notification } from './notification';
+import Notification from './notification'
+
+export { Notification }
