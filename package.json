@@ -2,15 +2,10 @@
 	"name": "stimulus-tailwind-components",
 	"version": "0.0.1",
 	"description": "StimulusJS for Tailwind Styled Components",
-	"source": "src/index.js",
-	"exports": "./dist/stimulus-tailwind-components.modern.js",
-	"main": "./dist/stimulus-tailwind-components.cjs",
-	"module": "./dist/stimulus-tailwind-components.module.js",
-	"unpkg": "./dist/stimulus-tailwind-components.umd.js",
-	"typings": "./index.d.ts",
+	"main": "dist/stimulus-tailwind-components.min.js",
 	"scripts": {
-		"build": "microbundle --globals @hotwired/stimulus=Stimulus",
-		"prepublish": "npm run build",
+		"build": "esbuild src/index.js --bundle --outfile=dist/stimulus-tailwind-components.min.js --minify --sourcemap",
+		"prepublish": "yarn build",
 		"test": "NODE_ENV=test jest"
 	},
 	"repository": {
@@ -50,8 +45,8 @@
 	},
 	"devDependencies": {
 		"@babel/plugin-transform-runtime": "^7.18.2",
+		"esbuild": "^0.14.43",
 		"jest": "^28.1.1",
-		"microbundle": "^0.15.0",
 		"mutationobserver-shim": "^0.3.7"
 	}
 }
