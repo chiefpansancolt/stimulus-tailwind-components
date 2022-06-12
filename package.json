@@ -2,14 +2,22 @@
 	"name": "stimulus-tailwind-components",
 	"version": "0.0.1",
 	"description": "StimulusJS for Tailwind Styled Components",
-	"main": "src/index.js",
+	"source": "src/index.js",
+	"exports": "./dist/stimulus-tailwind-components.modern.js",
+	"main": "./dist/stimulus-tailwind-components.cjs",
+	"module": "./dist/stimulus-tailwind-components.module.js",
+	"unpkg": "./dist/stimulus-tailwind-components.umd.js",
+	"typings": "./index.d.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "microbundle --globals @hotwired/stimulus=Stimulus",
+		"prepublish": "npm run build",
+		"test": "NODE_ENV=test jest"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/chiefpansancolt/stimulus-tailwind-components.git"
 	},
+	"amdName": "StimulusTailwindComponents",
 	"keywords": [
 		"stimulus",
 		"stimulusjs",
@@ -24,10 +32,26 @@
 		"url": "https://github.com/chiefpansancolt/stimulus-tailwind-components/issues"
 	},
 	"homepage": "https://github.com/chiefpansancolt/stimulus-tailwind-components#readme",
+	"jest": {
+		"testRegex": ".*_test.js",
+		"roots": [
+			"__tests__"
+		],
+		"moduleDirectories": [
+			"node_modules",
+			"src"
+		]
+	},
 	"dependencies": {
 		"@hotwired/stimulus": "^3.0.1"
 	},
 	"peerDependencies": {
 		"@hotwired/stimulus": "^3.0.1"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-runtime": "^7.18.2",
+		"jest": "^28.1.1",
+		"microbundle": "^0.15.0",
+		"mutationobserver-shim": "^0.3.7"
 	}
 }
