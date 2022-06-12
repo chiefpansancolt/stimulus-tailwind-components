@@ -1,2 +1,3 @@
-# stimulus-tailwind-components
- StimulusJS for Tailwind Styled Components
+# Stimulus Tailwind Components
+
+StimulusJS for Tailwind Styled Components
