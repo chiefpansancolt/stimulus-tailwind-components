@@ -13,7 +13,7 @@ export default class extends Controller {
 	initialize() {
 		if (this.autoDismissValue) {
 			setTimeout(() => {
-				this._hide();
+				this.close();
 			}, this.dismissAfterValue);
 		}
 	}
@@ -26,6 +26,7 @@ export default class extends Controller {
 
 	close() {
 		this._hide();
+		this.containerTarget.remove();
 	}
 
 	_show() {
