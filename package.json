@@ -1,6 +1,6 @@
 {
 	"name": "stimulus-tailwind-components",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "StimulusJS for Tailwind Styled Components",
 	"main": "dist/stimulus-tailwind-components.min.js",
 	"scripts": {
