@@ -1,3 +1,7 @@
+layout: page
+title: "Notification"
+permalink: /docs/notification
+
 # Notification Component
 
 The notification component is based on a item to show overtop of all other components in a site. This is styled based on TailwindUI.
