@@ -1,0 +1,39 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  checks: write
+  contents: write
+
+jobs:
+  build:
+    name: Run JS Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node.js dependencies
+        run: yarn install
+
+      - name: Compile JS
+        run: yarn build
+
+      - name: Upload Compiled JS
+        uses: actions/upload-artifact@v3
+        with:
+          name: stimulus-tailwind-components.min.js
+          path: dist/
