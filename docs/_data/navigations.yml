@@ -42,27 +42,27 @@ left_main:
       </svg>
 
 left_getting_started:
-  - name: Installation 
+  - name: Installation
     url: /docs/installation
     link: /docs/installation
     target: _Self
-  - name: Change Log 
+  - name: Change Log
     url: /docs/change_log
     link: /docs/change_log
     target: _Self
-  - name: Tailwind Setup 
+  - name: Tailwind Setup
     url: null
     link: https://tailwindcss.com/docs/installation
     target: _Blank
-  - name: StimulusJS Setup 
+  - name: StimulusJS Setup
     url: null
     link: https://stimulus.hotwired.dev/handbook/installing
     target: _Blank
-  - name: Tailwind Components 
+  - name: Tailwind Components
     url: null
     link: https://tailwindui.com
     target: _Blank
-  - name: View Component Setup 
+  - name: View Component Setup
     url: null
     link: https://viewcomponent.org
     target: _Blank

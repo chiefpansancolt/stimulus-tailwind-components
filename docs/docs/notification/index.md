@@ -61,8 +61,8 @@ This option supports the following options:
 - [x] Auto Dismiss
 
 ```html
-<div aria-live="assertive" class="fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
-  <div class="w-full flex flex-col items-center space-y-4 sm:items-end">
+<div aria-live="assertive" class="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
+  <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
     <div
       data-controller="notification"
       data-notification-target="container"
@@ -74,7 +74,7 @@ This option supports the following options:
       data-notification-leaving-class="transition ease-in duration-100"
       data-notification-leaving-to-class="opacity-0"
       data-notification-leaving-from-class="opacity-100"
-      class="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden"
+      class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
     >
       <div class="p-4">
         <div class="flex items-start">
@@ -87,11 +87,11 @@ This option supports the following options:
             <p class="text-sm font-medium text-gray-900">Successfully!</p>
             <p class="mt-1 text-sm text-gray-500"> I am a Notification with Auto Dismiss and Manual Dismiss </p>
           </div>
-          <div class="ml-4 flex-shrink-0 flex">
+          <div class="ml-4 flex flex-shrink-0">
             <button
               data-action="notification#close"
               type="button"
-              class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               <span class="sr-only">Close</span>
               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -118,8 +118,8 @@ This option supports the following options:
 - [ ] Auto Dismiss
 
 ```html
-<div aria-live="assertive" class="fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
-  <div class="w-full flex flex-col items-center space-y-4 sm:items-end">
+<div aria-live="assertive" class="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
+  <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
     <div
       data-controller="notification"
       data-notification-target="container"
@@ -129,7 +129,7 @@ This option supports the following options:
       data-notification-leaving-class="transition ease-in duration-100"
       data-notification-leaving-to-class="opacity-0"
       data-notification-leaving-from-class="opacity-100"
-      class="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden"
+      class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
     >
       <div class="p-4">
         <div class="flex items-start">
@@ -143,11 +143,11 @@ This option supports the following options:
             <p class="mt-1 text-sm text-gray-500"> I am a Notification< without Auto Dismiss and with Manual Dismiss/p> </p>
           </div>
 
-          <div class="ml-4 flex-shrink-0 flex">
+          <div class="ml-4 flex flex-shrink-0">
             <button
               data-action="notification#close"
               type="button"
-              class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               <span class="sr-only">Close</span>
               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -227,12 +227,12 @@ In Rails you can use a gem called View Components to enable the ability to templ
   data-notification-leaving-class="transition ease-in duration-100"
   data-notification-leaving-to-class="opacity-0"
   data-notification-leaving-from-class="opacity-100"
-  class="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden"
+  class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
 >
   <div class="p-4">
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 <%= TYPES[type][:color] %>" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="<%= TYPES[type][:color] %> h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <% if TYPES[type][:icon] == "error" %>
           <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
           <% end %> <% if TYPES[type][:icon] === "success" %>
@@ -244,11 +244,11 @@ In Rails you can use a gem called View Components to enable the ability to templ
         <p class="text-sm font-medium text-gray-900"><%= TYPES[type][:label] %></p>
         <p class="mt-1 text-sm text-gray-500"><%= content %></p>
       </div>
-      <div class="ml-4 flex-shrink-0 flex">
+      <div class="ml-4 flex flex-shrink-0">
         <button
           data-action="notification#close"
           type="button"
-          class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
+          class="inline-flex rounded-md bg-white text-gray-400 transition duration-150 ease-in-out hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
           <span class="sr-only">Close</span>
           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
