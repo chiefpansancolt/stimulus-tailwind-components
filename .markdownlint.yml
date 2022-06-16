@@ -3,8 +3,7 @@ default: true
 # Exclusions for deliberate/widespread violations
 MD001: false # Header levels should only increment by one level at a time
 MD002: false # First header should be a h1 header
-MD007: # Unordered list indentation
-  indent: 4
+MD007: false # Unordered list indentation
 MD012: false # Multiple consecutive blank lines
 MD013: false # Line length
 MD014: false # Dollar signs used before commands without showing output

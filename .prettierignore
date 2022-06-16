@@ -7,3 +7,6 @@ node_modules/
 dist/
 yarn.lock
 bin/
+docs/_site
+docs/dist
+docs/vendor

@@ -4,12 +4,16 @@
   "description": "StimulusJS for Tailwind Styled Components",
   "main": "dist/stimulus-tailwind-components.min.js",
   "scripts": {
-    "build": "rimraf dist && node ./esbuild.js",
-    "prepublish": "yarn build",
+    "build:playground": "node ./esbuild-playground.js",
+    "build:prod": "rimraf dist && node ./esbuild.js",
+    "prepublish": "yarn build:prod",
     "lint:markdown": "markdownlint CHANGELOG.md .github/CODE_OF_CONDUCT.md .github/CONTRIBUTING.md README.md docs/**/*.md -c .markdownlint.yml",
-    "lint:javascript": "eslint src esbuild.js",
+    "lint:javascript": "eslint src esbuild.js esbuild-playground.js",
     "format": "prettier './**/*.{css,js,json,yml,md}' --list-different",
-    "format:fix": "prettier './**/*.{css,js,json,yml,md}' --write"
+    "format:fix": "prettier './**/*.{css,js,json,yml,md}' --write",
+    "tailwind:build": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m",
+    "tailwind:watch": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m --watch",
+    "docs:dev": "cd docs && bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",
@@ -40,10 +44,15 @@
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.2",
     "esbuild": "^0.14.43",
     "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
     "markdownlint": "^0.25.1",
     "prettier": "^2.6.2",
-    "rimraf": "^3.0.2"
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.1.2"
   }
 }
