@@ -11,33 +11,37 @@ nextName: Theme
 nextLink: /docs/theme
 ---
 
+## Playground
+
+Want to see them in action? Check out the examples [here]({{ site.links.playground.notification | relative_url }}) for the ability to play with notifications.
+
 ## Attributes
 
 ### Targets
 
-| Attribute | Type   | Details                                               | Syntax                                 |
-| --------- | ------ | ----------------------------------------------------- | -------------------------------------- |
-| container | String | Target for the container of the Notification instance | `data-notification-target="container"` |
+| Attribute | Type   | Required | Details                                               | Syntax                                 |
+| --------- | ------ | -------- | ----------------------------------------------------- | -------------------------------------- |
+| container | String | true     | Target for the container of the Notification instance | `data-notification-target="container"` |
 
 ### Classes
 
-| Attribute    | Details                          | Syntax                                                                                              |
-| ------------ | -------------------------------- | --------------------------------------------------------------------------------------------------- |
-| entering     | Detail classes for entering base | `data-notification-entering-class="transform ease-out duration-300 transition"`                     |
-| enteringTo   | Detail classes for entering to   | `data-notification-entering-to-class="translate-y-0 opacity-100 sm:translate-x-0"`                  |
-| enteringFrom | Detail classes for entering from | `data-notification-entering-from-class="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"` |
-| leaving      | Detail classes for leaving base  | `data-notification-leaving-class="transition ease-in duration-100"`                                 |
-| leavingTo    | Detail classes for leaving to    | `data-notification-leaving-to-class="opacity-0"`                                                    |
-| leavingFrom  | Detail classes for leaving from  | `data-notification-leaving-from-class="opacity-100"`                                                |
+| Attribute    | Required | Details                          | Syntax                                                                                              |
+| ------------ | -------- | -------------------------------- | --------------------------------------------------------------------------------------------------- |
+| entering     | true     | Detail classes for entering base | `data-notification-entering-class="transform ease-out duration-300 transition"`                     |
+| enteringTo   | true     | Detail classes for entering to   | `data-notification-entering-to-class="translate-y-0 opacity-100 sm:translate-x-0"`                  |
+| enteringFrom | true     | Detail classes for entering from | `data-notification-entering-from-class="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"` |
+| leaving      | true     | Detail classes for leaving base  | `data-notification-leaving-class="transition ease-in duration-100"`                                 |
+| leavingTo    | true     | Detail classes for leaving to    | `data-notification-leaving-to-class="opacity-0"`                                                    |
+| leavingFrom  | true     | Detail classes for leaving from  | `data-notification-leaving-from-class="opacity-100"`                                                |
 
 ### Values
 
-| Attribute    | Type    | Default | Details                                                         | Syntax                                         |
-| ------------ | ------- | ------- | --------------------------------------------------------------- | ---------------------------------------------- |
-| autoDismiss  | Boolean | false   | Used to activate a notification to auto dismiss                 | `data-notification-auto-dismiss-value="true"`  |
-| dismissAfter | Number  | ""      | Used in compainion to autoDismiss to indicate when to auto hide | `data-notification-dismiss-after-value="4000"` |
-| enterTimeout | Number  | 1000    | Used to change the animation of the notification appearing      | `data-notification-enter-timeout-value="1200"` |
-| leaveTimeout | Number  | 1000    | Used to change the animation of the notification leaving        | `data-notification-leave-timeout-value="1200"` |
+| Attribute    | Type    | Default | Required                       | Details                                                         | Syntax                                         |
+| ------------ | ------- | ------- | ------------------------------ | --------------------------------------------------------------- | ---------------------------------------------- |
+| autoDismiss  | Boolean | false   | false                          | Used to activate a notification to auto dismiss                 | `data-notification-auto-dismiss-value="true"`  |
+| dismissAfter | Number  | ""      | true if autoDismiss is enabled | Used in compainion to autoDismiss to indicate when to auto hide | `data-notification-dismiss-after-value="4000"` |
+| enterTimeout | Number  | 1000    | false                          | Used to change the animation of the notification appearing      | `data-notification-enter-timeout-value="1200"` |
+| leaveTimeout | Number  | 1000    | false                          | Used to change the animation of the notification leaving        | `data-notification-leave-timeout-value="1200"` |
 
 ## Methods
 
