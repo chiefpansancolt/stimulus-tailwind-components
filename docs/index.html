@@ -1,0 +1,42 @@
+---
+title: Stimulus Tailwind Components
+layout: home
+---
+
+<div class="relative bg-white dark:bg-slate-700 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+    <h2 class="text-base font-semibold uppercase tracking-wider text-emerald-600">Features</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Everything Supported in the Package</p>
+    <p class="mx-auto mt-5 max-w-prose text-xl text-slate-500 dark:text-slate-300">A compilation of StimulusJS Controllers built for Tailwindcss flavored views.</p>
+    <div class="mt-12">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {% assign features = site.data.features | sort: "order" %}
+        {% for feature in features %}
+          <a class="pt-6" href="{{ feature.docLink | relative_url }}">
+            <div class="flow-root rounded-lg bg-slate-100 dark:bg-slate-900 px-6 pb-8 relative">
+              <div class="absolute bottom-2.5 right-2.5">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-emerald-500 text-white">
+                  {% if feature.version != "Roadmap" %}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                  {% endif %}
+                  {{ feature.version }}
+                </span>
+              </div>
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center rounded-md bg-emerald-500 p-3 shadow-lg">
+                    {{ feature.icon }}
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium tracking-tight text-slate-900 dark:text-white">{{ feature.title }}</h3>
+                <p class="mt-5 text-base text-slate-500 dark:text-slate-300">{{ feature.details }}</p>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

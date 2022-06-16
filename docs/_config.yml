@@ -1,0 +1,25 @@
+title: Stimulus Tailwind Components
+email: github@chiefpansancolt.live
+description: >-
+  Documentation for Stimulus Tailwind Components, a node
+  package that provides StimulusJS build controllers for
+  Tailwind based Components, currently supports (Notifications).
+domain: chiefpansancolt.github.io
+url: https://chiefpansancolt.github.io
+baseurl: /stimulus-tailwind-components
+twitter_username: chiefpansancolt
+github_username: chiefpansancolt
+markdown: CommonMarkGhPages
+commonmark:
+  extensions: ['strikethrough', 'autolink', 'table', 'tagfilter', 'tasklist']
+highlighter: rouge
+
+copyright: Copyright &copy; 2022 Christopher Pezza, All rights reserved.
+
+links:
+  home: /
+  repo: https://github.com/chiefpansancolt/stimulus-tailwind-components
+  roadmap: https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1
+  discord: https://discord.com
+  examples: /playground/home
+  installation: /docs/installation
