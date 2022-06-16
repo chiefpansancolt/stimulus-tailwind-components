@@ -23,3 +23,7 @@ links:
   discord: https://discord.com
   examples: /playground/home
   installation: /docs/installation
+  docs:
+    notification: /docs/notification
+  playground:
+    notification: /playground/notification
