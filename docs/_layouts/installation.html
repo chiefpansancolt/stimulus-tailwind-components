@@ -4,31 +4,20 @@ layout: docs
 
 <main class="lg:col-span-9 xl:col-span-7">
   <header id="header" class="mb-10 md:flex md:items-start">
-    <div class="flex-auto max-w-5xl">
-      <p class="mb-4 text-sm leading-6 font-semibold text-emerald-500 dark:text-emerald-400">
-        {{ page.header }}
-      </p>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
-        {{ page.subheader }}
-      </h1>
-      <p class="mt-4 text-lg text-slate-700 dark:text-slate-400">
-        {{ page.details }}
-      </p>
+    <div class="max-w-5xl flex-auto">
+      <p class="mb-4 text-sm font-semibold leading-6 text-emerald-500 dark:text-emerald-400"> {{ page.header }} </p>
+      <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl"> {{ page.subheader }} </h1>
+      <p class="mt-4 text-lg text-slate-700 dark:text-slate-400"> {{ page.details }} </p>
     </div>
   </header>
-  <section class="mb-16 relative">
-    <div class="relative z-10 prose prose-slate dark:prose-dark max-w-5xl" id="page-content">
-      {{ content }}
-    </div>
-    <footer class="text-sm leading-6 mt-16">
-      <div class="pt-10 pb-28 border-t border-slate-200 sm:flex justify-between text-slate-500 dark:border-slate-200/5">
+  <section class="relative mb-16">
+    <div class="prose prose-slate relative z-10 max-w-5xl dark:prose-dark" id="page-content"> {{ content }} </div>
+    <footer class="mt-16 text-sm leading-6">
+      <div class="justify-between border-t border-slate-200 pt-10 pb-28 text-slate-500 dark:border-slate-200/5 sm:flex">
         <div class="mb-6 sm:mb-0 sm:flex">
           <p>{{ site.copyright }}</p>
         </div>
-        <div class="flex space-x-10 text-slate-400 dark:text-slate-500">
-          {% include github.html %}
-          {% include discord.html %}
-        </div>
+        <div class="flex space-x-10 text-slate-400 dark:text-slate-500"> {% include github.html %} {% include discord.html %} </div>
       </div>
     </footer>
   </section>

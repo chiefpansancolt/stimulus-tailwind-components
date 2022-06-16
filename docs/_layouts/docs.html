@@ -2,37 +2,30 @@
 layout: default
 ---
 
-<body class="bg-white text-slate-500 dark:bg-slate-900 dark:text-slate-400 h-full">
+<body class="h-full bg-white text-slate-500 dark:bg-slate-900 dark:text-slate-400">
   <div class="min-h-full">
-    <header class="shadow-sm lg:static lg:overflow-y-visible border-b border-slate-600">
+    <header class="border-b border-slate-600 shadow-sm lg:static lg:overflow-y-visible">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="relative flex justify-between xl:grid xl:grid-cols-12 lg:gap-8">
-          <div class="flex md:absolute md:left-0 md:inset-y-0 lg:static xl:col-span-2">
-            <div class="flex-shrink-0 flex items-center">
-              {% include logos.html %}
-            </div>
+        <div class="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
+          <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
+            <div class="flex flex-shrink-0 items-center"> {% include logos.html %} </div>
           </div>
           <div class="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6">
-            <div class="flex items-center px-6 py-4 md:max-w-3xl md:mx-auto lg:max-w-none lg:mx-0 xl:px-0"> </div>
+            <div class="flex items-center px-6 py-4 md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0"> </div>
           </div>
           <div class="hidden lg:flex lg:items-center lg:justify-end xl:col-span-4">
-            <div class="flex items-center">
-              {% include dark_mode.html %}
-              {% include github.html %}
-            </div>
+            <div class="flex items-center"> {% include dark_mode.html %} {% include github.html %} </div>
           </div>
         </div>
       </div>
     </header>
 
     <div class="py-10">
-      <div class="mx-auto sm:px-6 lg:px-8 lg:grid lg:grid-cols-12 lg:gap-8">
-        <div class="hidden lg:block lg:col-span-3 xl:col-span-2">
+      <div class="mx-auto sm:px-6 lg:grid lg:grid-cols-12 lg:gap-8 lg:px-8">
+        <div class="hidden lg:col-span-3 lg:block xl:col-span-2">
           <nav class="sticky top-4 lg:text-sm">
             <ul>
-              {% include left_nav_main.html %}
-              {% include left_nav_start.html %}
-              {% include left_nav_features.html isDocs="true" %}
+              {% include left_nav_main.html %} {% include left_nav_start.html %} {% include left_nav_features.html isDocs="true" %}
             </ul>
           </nav>
         </div>

@@ -1,33 +1,30 @@
-<aside class="hidden xl:block xl:col-span-3">
+<aside class="hidden xl:col-span-3 xl:block">
   <div class="sticky top-4 space-y-4">
-    <h5 class="text-slate-900 font-semibold mb-4 text-sm leading-6 dark:text-slate-100">
-      On this Page
-    </h5>
-    <ul class="text-slate-700 text-sm leading-6" id="table-contents">
-    </ul>
+    <h5 class="mb-4 text-sm font-semibold leading-6 text-slate-900 dark:text-slate-100"> On this Page </h5>
+    <ul class="text-sm leading-6 text-slate-700" id="table-contents"> </ul>
   </div>
 </aside>
 
 <script type="text/javascript">
-  window.onload = function() {
-    const content = document.querySelector("#page-content")
-    const tableContents = document.querySelector("#table-contents")
-    const headings = content.querySelectorAll("h1, h2, h3, h4, h5, h6")
-    
-    for(let i = 0; i < headings.length; i++) {
-      let newLi = document.createElement("li")
+  window.onload = function () {
+    const content = document.querySelector('#page-content')
+    const tableContents = document.querySelector('#table-contents')
+    const headings = content.querySelectorAll('h1, h2, h3, h4, h5, h6')
+
+    for (let i = 0; i < headings.length; i++) {
+      let newLi = document.createElement('li')
       if (headings[i].tagName != 'H2') {
-        newLi.classList.add("ml-4")
+        newLi.classList.add('ml-4')
       }
-      let newA = document.createElement("a")
-      newA.href = "#" + headings[i].id
+      let newA = document.createElement('a')
+      newA.href = '#' + headings[i].id
       if (headings[i].tagName != 'H2') {
-        newA.classList.add(...["group", "flex", "items-start", "py-1", "hover:text-slate-900", "dark:text-slate-400", "dark:hover:text-slate-300"])
+        newA.classList.add(...['group', 'flex', 'items-start', 'py-1', 'hover:text-slate-900', 'dark:text-slate-400', 'dark:hover:text-slate-300'])
       } else {
-        newA.classList.add(...["block", "py-1", "font-medium", "hover:text-slate-900", "dark:text-slate-400", "dark:hover:text-slate-300"])
+        newA.classList.add(...['block', 'py-1', 'font-medium', 'hover:text-slate-900', 'dark:text-slate-400', 'dark:hover:text-slate-300'])
       }
       let text = document.createTextNode(headings[i].textContent)
-      if (headings[i].tagName != "H2") {
+      if (headings[i].tagName != 'H2') {
         newA.innerHTML = `
         <svg width="3" height="24" viewBox="0 -9 3 24" class="mr-2 text-slate-400 overflow-visible group-hover:text-slate-600 dark:text-slate-600 dark:group-hover:text-slate-500">
           <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />

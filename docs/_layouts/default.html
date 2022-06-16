@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
-    <link href="{{ '/dist/tailwind.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ '/dist/prism.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/dist/tailwind.min.css' | relative_url }}" rel="stylesheet" />
+    <link href="{{ '/dist/prism.min.css' | relative_url }}" rel="stylesheet" />
     <script>
       window.esmsInitOptions = { enable: ['css-modules', 'json-modules'] }
     </script>
@@ -22,7 +22,6 @@
     <script type="module">
       import { Application } from '@hotwired/stimulus'
       import { Theme, Notification } from 'stimulus-tailwind-components'
-
       ;(() => {
         const application = Application.start()
         application.register('theme', Theme)
