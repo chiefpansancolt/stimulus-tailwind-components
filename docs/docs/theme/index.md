@@ -15,22 +15,22 @@ previousLink: /docs/theme
 
 ### Targets
 
-| Attribute | Type   | Details                                                   | Syntax                     |
-| --------- | ------ | --------------------------------------------------------- | -------------------------- |
-| body      | String | Target for the container of the page to set dark class on | `data-theme-target="body"` |
+| Attribute | Type   | Required | Details                                                   | Syntax                     |
+| --------- | ------ | -------- | --------------------------------------------------------- | -------------------------- |
+| body      | String | true     | Target for the container of the page to set dark class on | `data-theme-target="body"` |
 
 ### Classes
 
-| Attribute | Details                             | Syntax                         |
-| --------- | ----------------------------------- | ------------------------------ |
-| dark      | Detail class for defining dark mode | `data-theme-dark-class="dark"` |
+| Attribute | Required | Details                             | Syntax                         |
+| --------- | -------- | ----------------------------------- | ------------------------------ |
+| dark      | true     | Detail class for defining dark mode | `data-theme-dark-class="dark"` |
 
 ### Values
 
-| Attribute     | Type    | Default       | Details                                                                                             | Syntax                                         |
-| ------------- | ------- | ------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| storageName   | String  | "color-theme" | Used to define the local storage item name, allows for multiple instances in a site for theme usage | `data-theme-storage-name-value="color-theme2"` |
-| useSystemPref | Boolean | true          | Used to turn on and off reading a user System preference, on by default                             | `data-theme-use-system-pref-value="false"`     |
+| Attribute     | Type    | Default       | Required | Details                                                                                             | Syntax                                         |
+| ------------- | ------- | ------------- | -------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| storageName   | String  | "color-theme" | false    | Used to define the local storage item name, allows for multiple instances in a site for theme usage | `data-theme-storage-name-value="color-theme2"` |
+| useSystemPref | Boolean | true          | false    | Used to turn on and off reading a user System preference, on by default                             | `data-theme-use-system-pref-value="false"`     |
 
 ## Methods
 
