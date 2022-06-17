@@ -25,5 +25,7 @@ links:
   installation: /docs/installation
   docs:
     notification: /docs/notification
+    theme: /docs/theme
   playground:
     notification: /playground/notification
+    theme: /playground/theme

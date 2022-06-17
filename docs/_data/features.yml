@@ -14,7 +14,7 @@
   order: 2
   version: 0.1.0
   details: Ability to toggle Dark and Light Theme. With the ability to detect system preferece on load.
-  released: false
+  released: true
   docLink: docs/theme
   expLink: playground/theme
   icon: >-
