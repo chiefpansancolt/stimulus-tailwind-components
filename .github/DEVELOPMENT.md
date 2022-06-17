@@ -4,7 +4,7 @@ Looking to contribute here is a guide on how to setup your environment and guide
 
 ## Prerequisites
 
-You will need to have ruby v2.7.0, node v16+ and yarn 1.19 installed.
+You will need to have ruby v2.7.0, node v16+ and yarn 1.22 installed.
 
 Once you download the repo and get into the base of the folder you will need to run the below command to setup your local environment.
 
