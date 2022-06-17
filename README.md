@@ -7,71 +7,27 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/chiefpansancolt/stimulus-tailwind-components?label=Release&logo=github&style=for-the-badge)
 [![Discord](https://img.shields.io/discord/450095227185659905?color=yellow&label=Discord&logo=discord&style=for-the-badge)](https://discord.gg/pBxGpfrmD4)
 
-This is pre built stimulus controllers for common [tailwindcss](https://tailwindcss.com) based components inspired by [TailwindUI](https://tailwindui.com)
+This package contains pre built stimulus controllers for common [tailwindcss](https://tailwindcss.com) based components inspired by [TailwindUI](https://tailwindui.com) to help save you the time from having to build on every project you may need it on.
 
 Currently supports:
 
-- [Notification(s)](https://github.com/chiefpansancolt/stimulus-tailwind-components/blob/main/docs/Notification.md)
+- [Notification(s)](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/notification)
 
 ## Roadmap
 
-Check out the [roadmap](https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1) to see what other features are coming down the pipeline for this project!
+Check out the [roadmap](https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1) to see what other features and/or fixes are coming down the pipeline for this project!
 
 ## Installation
 
-This assumses you have [@hotwired/stimulus](https://stimulus.hotwired.dev) already installed and setup.
+Check out our documentation [here](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/installation) for full details on how to add to your project!
 
-```bash
-yarn add stimulus-tailwind-components
-```
+## Examples/Playground
 
-or
-
-```bash
-npm install stimulus-tailwind-components
-```
-
-## Usage
-
-You'll want to initialize StimulusJS and then you can import all the Tailwind components.
-
-### Usage look inside common JS projects
-
-```javascript
-../application.js
-
-import { Application } from "@hotwired/stimulus"
-
-const application = Application.start();
-
-// Import and register all TailwindCSS Components
-import { Notification } from "tailwindcss-stimulus-components"
-application.register('notification', Notification)
-```
-
-### Usage look inside a Rails App
-
-```javascript
-./app/javascript/controllers/application.js
-
-import { Application } from '@hotwired/stimulus'
-
-const application = Application.start()
-
-// Import and register all TailwindCSS Components
-import { Notification } from 'stimulus-tailwind-components'
-application.register('notification', Notification)
-
-// Configure Stimulus development experience
-application.debug = false
-window.Stimulus = application
-
-export { application }
-```
+Checkout a live demo of examples [here](https://chiefpansancolt/github.io/stimulus-tailwind-components/playground/home).
 
 ## Change Log
 
-Check out the [Change Log](https://github.com/chiefpansancolt/stimulus-tailwind-components/blob/main/CHANGELOG.md) for new breaking changes/features/bug fixes per release of a new version.
+Check out the [Change Log](https://chiefpansancolt/github.io/stimulus-tailwind-components/docs/change_log) for new breaking changes/features/bug fixes per release of a new and past versions.
 
 ## Contributing
 
@@ -86,10 +42,32 @@ To see more about Contributing check out this [document](https://github.com/chie
 
 ## Development
 
-After checking out the repo, run `yarn install` to install dependencies. Then, run `yarn test` to run the tests. You can also run `yarn build` to build the output to test on.
+Checkout our development guide [here](https://github.com/chiefpansancolt/stimulus-tailwind-components/blob/main/.github/DEVELOPMENT.md) to see how you can commit to the repo.
 
 _**NOTE: Do not commit any changes made in dist folder from compiling as this will be performed by the owner before building of a release.**_
 
 ## License
 
 Stimulus Tailwind Components is available as open source under the terms of the [MIT License](https://github.com/chiefpansancolt/stimulus-tailwind-components/blob/main/LICENSE).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://chrispezza.me"><img src="https://avatars3.githubusercontent.com/u/5841177?v=4" width="100px;" alt=""/><br /><sub><b>Christopher Pezza</b></sub></a><br /><a href="https://github.com/chiefpansancolt/stimulus-tailwind-components/commits?author=chiefpansancolt" title="Code">💻</a> <a href="https://github.com/chiefpansancolt/stimulus-tailwind-components/commits?author=chiefpansancolt" title="Documentation">📖</a> <a href="#tool-chiefpansancolt" title="Tools">🔧</a> <a href="https://github.com/chiefpansancolt/stimulus-tailwind-components/commits?author=chiefpansancolt" title="Tests">⚠️</a> <a href="#maintenance-chiefpansancolt" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
