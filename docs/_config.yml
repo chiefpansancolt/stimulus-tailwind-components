@@ -16,6 +16,8 @@ highlighter: rouge
 
 copyright: Copyright &copy; 2022 Christopher Pezza, All rights reserved.
 
+version: 0.1.0
+
 links:
   home: /
   repo: https://github.com/chiefpansancolt/stimulus-tailwind-components
