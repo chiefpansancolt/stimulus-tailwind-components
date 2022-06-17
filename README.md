@@ -12,6 +12,7 @@ This package contains pre built stimulus controllers for common [tailwindcss](ht
 Currently supports:
 
 - [Notification(s)](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/notification)
+- [Theme](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/theme)
 
 ## Roadmap
 
