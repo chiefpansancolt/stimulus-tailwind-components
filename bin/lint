@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+echo "== Starting Linting =="
+
+echo ""
+echo "== Linting Javascript =="
+yarn lint:javascript
+
+echo ""
+echo "== Linting Markdown =="
+yarn lint:markdown
+
+echo ""
+echo "== Formatting with Prettier =="
+if ! yarn format; then
+  echo ""
+  echo "== Files found needing formatting =="
+  echo "== Initialting Fixes =="
+  yarn format:fix
+fi
+
+echo ""
+echo "== Linting Complete =="

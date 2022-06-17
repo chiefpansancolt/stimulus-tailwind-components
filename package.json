@@ -4,9 +4,11 @@
   "description": "StimulusJS for Tailwind Styled Components",
   "main": "dist/stimulus-tailwind-components.min.js",
   "scripts": {
+    "build": "./bin/build",
     "build:playground": "node ./esbuild-playground.js",
     "build:prod": "node ./esbuild.js",
     "prepublish": "yarn build:prod",
+    "lint": "./bin/lint",
     "lint:markdown": "markdownlint .github/**/*.md README.md docs/**/*.md -c .markdownlint.yml",
     "lint:javascript": "eslint src esbuild.js esbuild-playground.js",
     "format": "prettier './**/*.{css,js,json,yml,md,html}' --list-different",

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+echo "== Starting Build =="
+
+echo ""
+echo "== Building Output =="
+yarn build:prod
+
+echo ""
+echo "== Building Output for Documentation Site =="
+yarn build:playground
+
+echo ""
+echo "== Building Tailwind CSS File for Site =="
+yarn tailwind:build
+
+echo ""
+echo "== Building Complete =="
