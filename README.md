@@ -23,11 +23,11 @@ Check out our documentation [here](https://chiefpansancolt.github.io/stimulus-ta
 
 ## Examples/Playground
 
-Checkout a live demo of examples [here](https://chiefpansancolt/github.io/stimulus-tailwind-components/playground/home).
+Checkout a live demo of examples [here](https://chiefpansancolt.github.io/stimulus-tailwind-components/playground/home).
 
 ## Change Log
 
-Check out the [Change Log](https://chiefpansancolt/github.io/stimulus-tailwind-components/docs/change_log) for new breaking changes/features/bug fixes per release of a new and past versions.
+Check out the [Change Log](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/change_log) for new breaking changes/features/bug fixes per release of a new and past versions.
 
 ## Contributing
 
