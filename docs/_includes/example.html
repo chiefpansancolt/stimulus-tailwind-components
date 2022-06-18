@@ -1,0 +1,15 @@
+<section>
+  <h3>{{ include.header }}</h3>
+  <div class="-mt-2.5">{{ include.subheader }}</div>
+  <div class="relative overflow-hidden rounded-lg border-slate-700 ring-1 ring-slate-700 ring-opacity-5">
+    <div class="flex items-center justify-center bg-white p-8 dark:bg-slate-700"> {{ include.content }} </div>
+    {% if include.content2 %}
+    <div class="bg-white pl-4 pb-4 text-slate-700 dark:bg-slate-700 dark:text-slate-300">{{ include.content2 }}</div>
+    {% endif %}
+  </div>
+  <div class="mt-2.5">
+    <pre class="language-html">
+      <code class="language-html" id="{{ include.codeId }}"></code>
+    </pre>
+  </div>
+</section>
