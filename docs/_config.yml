@@ -23,8 +23,13 @@ links:
   repo: https://github.com/chiefpansancolt/stimulus-tailwind-components
   roadmap: https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1
   discord: https://discord.com
+  tailwindcss: https://tailwindcss.com/docs/installation
+  stimulus: https://stimulus.hotwired.dev/handbook/installing
+  tailwindui: https://tailwindui.com
+  viewcomponents: https://viewcomponent.org
   examples: /playground/home
   installation: /docs/installation
+  change_log: /docs/change_log
   docs:
     notification: /docs/notification
     theme: /docs/theme

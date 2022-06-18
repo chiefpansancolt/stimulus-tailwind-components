@@ -1,6 +1,6 @@
 {% for item in site.data.navigations.left_main %} {% if page.url contains item.url %} {% assign classes = "text-emerald-500 dark:text-emerald-400" %} {% else %} {% assign classes = "text-slate-700
 hover:text-emerald-500 dark:text-slate-400 dark:hover:text-emerald-400" %} {% endif %}
 <li>
-  <a href="{{ item.link | relative_url }}" class="group mb-4 flex items-center font-medium lg:text-sm lg:leading-6 {{ classes }}"> {{ item.icon }} {{ item.name }} </a>
+  <a href="{{ site.links[item.link]| relative_url }}" class="group mb-4 flex items-center font-medium lg:text-sm lg:leading-6 {{ classes }}"> {{ item.icon }} {{ item.name }} </a>
 </li>
 {% endfor %}
