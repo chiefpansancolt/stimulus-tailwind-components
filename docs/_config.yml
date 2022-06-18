@@ -33,6 +33,8 @@ links:
   docs:
     notification: /docs/notification
     theme: /docs/theme
+    switch: /docs/switch
   playground:
     notification: /playground/notification
     theme: /playground/theme
+    switch: /playground/switch

@@ -72,6 +72,8 @@ left_features:
     url: notification
   - name: Theme
     url: theme
+  - name: Switch
+    url: switch
 
 error_page:
   - name: Home
