@@ -12,27 +12,29 @@
     const headings = content.querySelectorAll('h1, h2, h3, h4, h5, h6')
 
     for (let i = 0; i < headings.length; i++) {
-      let newLi = document.createElement('li')
-      if (headings[i].tagName != 'H2') {
-        newLi.classList.add('ml-4')
+      if (!headings[i].dataset.ignore == true) {
+        let newLi = document.createElement('li')
+        if (headings[i].tagName != 'H2') {
+          newLi.classList.add('ml-4')
+        }
+        let newA = document.createElement('a')
+        newA.href = '#' + headings[i].id
+        if (headings[i].tagName != 'H2') {
+          newA.classList.add(...['group', 'flex', 'items-start', 'py-1', 'hover:text-slate-900', 'dark:text-slate-400', 'dark:hover:text-slate-300'])
+        } else {
+          newA.classList.add(...['block', 'py-1', 'font-medium', 'hover:text-slate-900', 'dark:text-slate-400', 'dark:hover:text-slate-300'])
+        }
+        let text = document.createTextNode(headings[i].textContent)
+        if (headings[i].tagName != 'H2') {
+          newA.innerHTML = `
+          <svg width="3" height="24" viewBox="0 -9 3 24" class="mr-2 text-slate-400 overflow-visible group-hover:text-slate-600 dark:text-slate-600 dark:group-hover:text-slate-500">
+            <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>`
+        }
+        newA.appendChild(text)
+        newLi.appendChild(newA)
+        tableContents.appendChild(newLi)
       }
-      let newA = document.createElement('a')
-      newA.href = '#' + headings[i].id
-      if (headings[i].tagName != 'H2') {
-        newA.classList.add(...['group', 'flex', 'items-start', 'py-1', 'hover:text-slate-900', 'dark:text-slate-400', 'dark:hover:text-slate-300'])
-      } else {
-        newA.classList.add(...['block', 'py-1', 'font-medium', 'hover:text-slate-900', 'dark:text-slate-400', 'dark:hover:text-slate-300'])
-      }
-      let text = document.createTextNode(headings[i].textContent)
-      if (headings[i].tagName != 'H2') {
-        newA.innerHTML = `
-        <svg width="3" height="24" viewBox="0 -9 3 24" class="mr-2 text-slate-400 overflow-visible group-hover:text-slate-600 dark:text-slate-600 dark:group-hover:text-slate-500">
-          <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        </svg>`
-      }
-      newA.appendChild(text)
-      newLi.appendChild(newA)
-      tableContents.appendChild(newLi)
     }
   }
 </script>
