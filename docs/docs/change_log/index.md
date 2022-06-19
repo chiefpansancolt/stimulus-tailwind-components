@@ -11,6 +11,27 @@ nextName: Notification
 nextLink: /docs/notification
 ---
 
+## Version [0.x.0](https://github.com/chiefpansancolt/stimulus-tailwind-components/releases/tag/0.x.0)
+
+### New Features
+
+- Add Switch (Toggle) Component
+  - Ability to enable/disable
+  - Ability to work with an icon
+  - Ability to send value to checked value on linked input
+    - Will trigger onchange event with value change
+  - Compatability with theme component
+
+### Adds
+
+- Update for Theme Component
+  - Added support to work with Switch/Toggle display
+
+### Updates
+
+- Updated default value for notification dismiss after value to `4000` from not set.
+- Clean up on more documentation structures
+
 ## Version [0.1.1](https://github.com/chiefpansancolt/stimulus-tailwind-components/releases/tag/0.1.1)
 
 ### Fixes
