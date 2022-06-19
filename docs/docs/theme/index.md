@@ -5,10 +5,6 @@ header: Theme
 subheader: Theme Component (Dark Mode Toggle)
 details: This component is giving you the ability to enable dark mode on your site. This supports on load set of the theme based on your system preferences.
 permalink: /docs/theme
-nextName: Installation
-nextLink: /docs/installation
-previousName: Theme
-previousLink: /docs/theme
 ---
 
 ## Playground
