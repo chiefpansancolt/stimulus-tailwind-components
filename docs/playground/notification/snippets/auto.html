@@ -9,7 +9,7 @@
   data-notification-leaving-class="transition ease-in duration-100"
   data-notification-leaving-to-class="opacity-0"
   data-notification-leaving-from-class="opacity-100"
-  class="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden z-40"
+  class="pointer-events-auto z-40 w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
 >
   <div class="p-4">
     <div class="flex items-start">
@@ -17,11 +17,11 @@
         <p class="text-sm font-medium text-gray-900">Successfully saved!</p>
         <p class="mt-1 text-sm text-gray-500"> This notification can be Manually cleared or will auto clear in 4 secs. </p>
       </div>
-      <div class="ml-4 flex-shrink-0 flex">
+      <div class="ml-4 flex flex-shrink-0">
         <button
           data-action="notification#close"
           type="button"
-          class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
           <span class="sr-only">Close</span>
           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

@@ -12,26 +12,22 @@ nextLink: /playground/theme
 ---
 
 {% capture autoDismiss %}
-  <button
-    type="button"
-    class="inline-flex items-center rounded-md border border-transparent bg-emerald-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-    onclick="createAutoDismissed()"
-  >
-    Add Another Auto
-  </button>
-{% endcapture %}
-{% include example.html content=autoDismiss header="Auto Dismissed Notification" codeId="autoDismissed" %}
-
-{% capture manualDismiss %}
-  <button
-    type="button"
-    class="inline-flex items-center rounded-md border border-transparent bg-emerald-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-    onclick="createManualDismissed()"
-  >
-    Add Another Manual
-  </button>
-{% endcapture %}
-{% include example.html content=autoDismiss header="Manually Dismissed Notification" codeId="manualDismissed" %}
+<button
+  type="button"
+  class="inline-flex items-center rounded-md border border-transparent bg-emerald-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+  onclick="createAutoDismissed()"
+>
+  Add Another Auto
+</button>
+{% endcapture %} {% include example.html content=autoDismiss header="Auto Dismissed Notification" codeId="autoDismissed" %} {% capture manualDismiss %}
+<button
+  type="button"
+  class="inline-flex items-center rounded-md border border-transparent bg-emerald-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+  onclick="createManualDismissed()"
+>
+  Add Another Manual
+</button>
+{% endcapture %} {% include example.html content=autoDismiss header="Manually Dismissed Notification" codeId="manualDismissed" %}
 
 <div aria-live="assertive" class="not-prose pointer-events-none fixed inset-0 top-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
   <div class="flex w-full flex-col items-center space-y-4 sm:items-end" id="notification-container"></div>
@@ -59,8 +55,5 @@ nextLink: /playground/theme
     createManualDismissed()
   }
 
-  window.addEventListener ? 
-    window.addEventListener("load",loading,false) 
-    : 
-    window.attachEvent && window.attachEvent("onload",loading);
+  window.addEventListener ? window.addEventListener('load', loading, false) : window.attachEvent && window.attachEvent('onload', loading)
 </script>

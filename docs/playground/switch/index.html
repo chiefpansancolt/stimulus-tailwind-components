@@ -11,25 +11,15 @@ nextName: Home
 nextLink: /playground/home
 ---
 
-{% capture darkModeToggleSnippet %}
-  {% include_relative snippets/darkmode.html %}
-{% endcapture %}
-{% include example.html content=darkModeToggleSnippet header="Dark Mode Switch Toggle" subheader="This is pared with the Theme Component to make possible without the need for a
-specific controller for" codeId="darkModeToggle" %}
-{% capture simpleToggleSnippet %}
-  {% include_relative snippets/simple.html %}
-{% endcapture %}
-{% include example.html content=simpleToggleSnippet header="Simple Toggle" codeId="simpleToggle" %}
-{% capture inputToggleSnippet %}
-  {% include_relative snippets/input.html %}
-{% endcapture %}
-{% capture inputToggleSnippet2 %}
+{% capture darkModeToggleSnippet %} {% include_relative snippets/darkmode.html %} {% endcapture %} {% include example.html content=darkModeToggleSnippet header="Dark Mode Switch Toggle"
+subheader="This is pared with the Theme Component to make possible without the need for a specific controller for" codeId="darkModeToggle" %} {% capture simpleToggleSnippet %} {% include_relative
+snippets/simple.html %} {% endcapture %} {% include example.html content=simpleToggleSnippet header="Simple Toggle" codeId="simpleToggle" %} {% capture inputToggleSnippet %} {% include_relative
+snippets/input.html %} {% endcapture %} {% capture inputToggleSnippet2 %}
 <div>
   <span class="mr-1 font-bold">Input Value:</span>
   <span id="input-output"></span>
 </div>
-{% endcapture %}
-{% include example.html content=inputToggleSnippet content2=inputToggleSnippet2 header="Input Toggle" codeId="inputToggle" %}
+{% endcapture %} {% include example.html content=inputToggleSnippet content2=inputToggleSnippet2 header="Input Toggle" codeId="inputToggle" %}
 
 <script type="text/javascript">
   function inputChanged() {

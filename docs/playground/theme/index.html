@@ -11,10 +11,7 @@ nextName: Home
 nextLink: /playground/home
 ---
 
-{% capture darkModeSnippet %}
-  {% include_relative snippets/base.html %}
-{% endcapture %}
-{% include example.html content=darkModeSnippet header="Standard Site Usage" codeId="base" %}
+{% capture darkModeSnippet %} {% include_relative snippets/base.html %} {% endcapture %} {% include example.html content=darkModeSnippet header="Standard Site Usage" codeId="base" %}
 
 <script type="text/javascript">
   const baseCode = `{% include_relative snippets/full.html %}`
