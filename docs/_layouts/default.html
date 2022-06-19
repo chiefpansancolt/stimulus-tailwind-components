@@ -21,12 +21,13 @@
 
     <script type="module">
       import { Application } from '@hotwired/stimulus'
-      import { Theme, Notification, Switch } from 'stimulus-tailwind-components'
+      import { Theme, Notification, Switch, Modal } from 'stimulus-tailwind-components'
       ;(() => {
         const application = Application.start()
         application.register('theme', Theme)
         application.register('notification', Notification)
         application.register('switch', Switch)
+        application.register('modal', Modal)
       })()
     </script>
   </head>

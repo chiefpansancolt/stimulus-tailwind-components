@@ -74,6 +74,8 @@ left_features:
     url: theme
   - name: Switch
     url: switch
+  - name: Modal
+    url: modal
 
 error_page:
   - name: Home
