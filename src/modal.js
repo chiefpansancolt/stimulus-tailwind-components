@@ -1,6 +1,6 @@
 import { Controller } from '@hotwired/stimulus'
 
-CONSTANTS = {
+const CONSTANTS = {
   SCROLL: ['fixed', 'inset-x-0', 'overflow-hidden'],
 }
 
@@ -30,7 +30,7 @@ export default class extends Controller {
         this.backgroundTarget.classList.remove(this.fromBackgroundClass)
         this.viewTarget.classList.remove(...this.leavingClasses)
         this.viewTarget.classList.remove(...this.toViewClasses)
-      }, 250)
+      }, 100)
     })
   }
 
