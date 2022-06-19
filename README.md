@@ -16,7 +16,7 @@ Currently supports:
 
 ## Roadmap
 
-Check out the [roadmap](https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1) to see what other features and/or fixes are coming down the pipeline for this project!
+Check out the [roadmap](https://github.com/users/chiefpansancolt/projects/3) to see what other features and/or fixes are coming down the pipeline for this project!
 
 ## Installation
 

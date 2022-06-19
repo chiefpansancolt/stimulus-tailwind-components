@@ -30,7 +30,8 @@ layout: default
             </ul>
           </nav>
         </div>
-        <main class="col-span-10">
+        {% if page.url == "/playground/home" %} {% assign classes = "col-span-10" %} {% else %} {% assign classes = "lg:col-span-9 xl:col-span-7" %} {% endif %}
+        <main class="{{ classes }}">
           <header class="relative z-20">
             <div>
               <p class="mb-2 text-sm font-semibold leading-6 text-emerald-500 dark:text-emerald-400"> {{ page.header }} </p>
@@ -41,7 +42,25 @@ layout: default
             <p class="mt-2 text-lg text-slate-700 dark:text-slate-400">{{ page.details }}</p>
           </header>
           <section class="relative mb-16 mt-8">
-            <div class="relative z-40 max-w-none"> {{ content }} </div>
+            <div aria-live="assertive" class="pointer-events-none fixed inset-0 top-10 z-40 flex items-end px-4 py-6 sm:items-start sm:p-6">
+              <div class="flex w-full flex-col items-center space-y-4 sm:items-end" id="notification-container"></div>
+            </div>
+            <div class="relative z-40 max-w-none" id="page-content">
+              {% if page.url == "/playground/home" %} {{ content }} {% else %}
+              <div class="prose prose-slate dark:prose-dark">
+                <h2>Documentation</h2>
+                {% assign docUrl = page.header | downcase %}
+                <p
+                  >Want to see more details on how to configure {{ page.header }}? Check out the doucmentation <a href="{{ site.links.docs[docUrl] | relative_url }}">here</a> for more details and
+                  exaplainations.</p
+                >
+
+                <h2>Examples</h2>
+
+                <div class="-mt-10 space-y-20"> {{ content }} </div>
+              </div>
+              {% endif %}
+            </div>
           </section>
           <footer class="mt-16 text-sm leading-6">
             {% include footer_nav.html %}
@@ -53,6 +72,7 @@ layout: default
             </div>
           </footer>
         </main>
+        {% if page.url != "/playground/home" %} {% include table_contents.html %} {% endif %}
       </div>
     </div>
   </div>

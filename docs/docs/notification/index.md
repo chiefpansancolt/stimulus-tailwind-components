@@ -36,12 +36,12 @@ Want to see them in action? Check out the examples [here]({{ site.links.playgrou
 
 ### Values
 
-| Attribute    | Type    | Default | Required                       | Details                                                         | Syntax                                         |
-| ------------ | ------- | ------- | ------------------------------ | --------------------------------------------------------------- | ---------------------------------------------- |
-| autoDismiss  | Boolean | false   | false                          | Used to activate a notification to auto dismiss                 | `data-notification-auto-dismiss-value="true"`  |
-| dismissAfter | Number  | ""      | true if autoDismiss is enabled | Used in compainion to autoDismiss to indicate when to auto hide | `data-notification-dismiss-after-value="4000"` |
-| enterTimeout | Number  | 1000    | false                          | Used to change the animation of the notification appearing      | `data-notification-enter-timeout-value="1200"` |
-| leaveTimeout | Number  | 1000    | false                          | Used to change the animation of the notification leaving        | `data-notification-leave-timeout-value="1200"` |
+| Attribute    | Type    | Default | Required | Details                                                         | Syntax                                         |
+| ------------ | ------- | ------- | -------- | --------------------------------------------------------------- | ---------------------------------------------- |
+| autoDismiss  | Boolean | false   | false    | Used to activate a notification to auto dismiss                 | `data-notification-auto-dismiss-value="true"`  |
+| dismissAfter | Number  | 4000    | false    | Used in compainion to autoDismiss to indicate when to auto hide | `data-notification-dismiss-after-value="4000"` |
+| enterTimeout | Number  | 1000    | false    | Used to change the animation of the notification appearing      | `data-notification-enter-timeout-value="1200"` |
+| leaveTimeout | Number  | 1000    | false    | Used to change the animation of the notification leaving        | `data-notification-leave-timeout-value="1200"` |
 
 ## Methods
 

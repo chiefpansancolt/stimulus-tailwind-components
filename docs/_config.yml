@@ -21,13 +21,20 @@ version: 0.1.1
 links:
   home: /
   repo: https://github.com/chiefpansancolt/stimulus-tailwind-components
-  roadmap: https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1
+  roadmap: https://github.com/users/chiefpansancolt/projects/3
   discord: https://discord.com
+  tailwindcss: https://tailwindcss.com/docs/installation
+  stimulus: https://stimulus.hotwired.dev/handbook/installing
+  tailwindui: https://tailwindui.com
+  viewcomponents: https://viewcomponent.org
   examples: /playground/home
   installation: /docs/installation
+  change_log: /docs/change_log
   docs:
     notification: /docs/notification
     theme: /docs/theme
+    switch: /docs/switch
   playground:
     notification: /playground/notification
     theme: /playground/theme
+    switch: /playground/switch

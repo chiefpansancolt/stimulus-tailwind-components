@@ -5,7 +5,7 @@ export default class extends Controller {
   static classes = ['entering', 'enteringTo', 'enteringFrom', 'leaving', 'leavingTo', 'leavingFrom']
   static values = {
     autoDismiss: { type: Boolean, default: false },
-    dismissAfter: Number,
+    dismissAfter: { type: Number, default: 4000 },
     enterTimeout: { type: Number, default: 1000 },
     leaveTimeout: { type: Number, default: 1000 },
   }
