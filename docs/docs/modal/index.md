@@ -86,17 +86,17 @@ This option is without a close ability on the modal.
         aria-labelledby="modal-headline"
       >
         <div class="absolute top-0 right-0 pt-4 pr-4">
-        <div class="sm:flex sm:items-start">
-          <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-            <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50" data-ignore="true"> Header Title </h3>
-            <div class="mt-6"> Im all the data that shows </div>
+          <div class="sm:flex sm:items-start">
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+              <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50" data-ignore="true"> Header Title </h3>
+              <div class="mt-6"> Im all the data that shows </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 ```
 
 ### Option #2
@@ -155,5 +155,4 @@ This option is everything available with the modal.
     </div>
   </div>
 </div>
-
 ```
