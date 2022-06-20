@@ -22,7 +22,7 @@ layout: default
             <div class="min-w-0 flex-1">
               <h3 class="text-base font-medium text-slate-900 dark:text-white">
                 <span class="rounded-sm focus-within:ring-2 focus-within:ring-emerald-500 focus-within:ring-offset-2">
-                  <a href="{{ item.url | relative_url }}" class="focus:outline-none">
+                  <a href="{{ site.links[item.link] | relative_url }}" class="focus:outline-none">
                     <span class="absolute inset-0" aria-hidden="true"></span>
                     {{ item.name }}
                   </a>

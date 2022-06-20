@@ -1,0 +1,47 @@
+<div
+  data-controller="modal"
+  data-modal-allow-close-value="true"
+  data-modal-hide-class="hidden"
+  data-modal-entering-class="ease-out duration-300"
+  data-modal-leaving-class="ease-in duration-200"
+  data-modal-to-background-class="opacity-100"
+  data-modal-from-background-class="opacity-0"
+  data-modal-to-view-class="opacity-100 translate-y-0 sm:scale-100"
+  data-modal-from-view-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+>
+  <button data-action="click->modal#open" type="button" class="mt-auto inline-flex rounded-xl bg-emerald-500 py-2 px-4 text-slate-900"> Show Basic Modal </button>
+  <div data-modal-target="container" class="fixed inset-0 z-20 hidden overflow-y-auto">
+    <div class="flex h-2/3 items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+      <div data-modal-target="background" class="fixed inset-0 opacity-0 transition-opacity" aria-hidden="true">
+        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+      </div>
+      <span class="inline-block align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      <div
+        data-modal-target="view"
+        class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left align-bottom shadow-xl transition-all dark:bg-gray-800 sm:my-8 sm:w-full sm:max-w-lg sm:p-6 sm:align-middle"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-headline"
+      >
+        <div class="absolute top-0 right-0 pt-4 pr-4">
+          <button
+            data-action="click->modal#close"
+            type="button"
+            class="rounded-md bg-transparent text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:text-gray-50 dark:hover:text-gray-200"
+          >
+            <span class="sr-only">Close</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="sm:flex sm:items-start">
+          <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+            <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50" data-ignore="true"> Header Title </h3>
+            <div class="mt-6"> Im all the data that shows </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

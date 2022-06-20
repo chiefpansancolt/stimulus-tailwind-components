@@ -34,7 +34,7 @@ details: A place to see each component in action using the code snippets from th
       <div class="-mt-px flex divide-x divide-slate-200 dark:divide-slate-800">
         <div class="flex w-0 flex-1">
           <a
-            href="{{ feature.docLink | relative_url }}"
+            href="{{ site.links.docs[feature.linkName] | relative_url }}"
             class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-slate-700 hover:text-emerald-500 dark:text-slate-300 dark:hover:text-emerald-400"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -49,7 +49,7 @@ details: A place to see each component in action using the code snippets from th
         </div>
         <div class="-ml-px flex w-0 flex-1">
           <a
-            href="{{ feature.expLink | relative_url }}"
+            href="{{ site.links.playground[feature.linkName] | relative_url }}"
             class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-slate-700 hover:text-emerald-500 dark:text-slate-300 dark:hover:text-emerald-400"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

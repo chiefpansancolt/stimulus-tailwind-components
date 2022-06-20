@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./_layouts/**/*.{html,md}', './_data/**/*.yml', './docs/**/*.{html,md}', './playgrounds/**/*.{html,md}', './index.html', './404.html', './about.md'],
+  content: ['./_layouts/**/*.{html,md}', './_data/**/*.yml', './docs/**/*.{html,md}', './playgrounds/**/*.{html,md}', './index.html', './404.html', './dist/stimulus-tailwind-components.min.js'],
   darkMode: 'class',
   theme: {
     extend: {

@@ -1,0 +1,21 @@
+---
+layout: playground
+permalink: /playground/modal
+title: Stimulus Tailwind Components - Playground Modal
+header: Modal
+subheader: Modal Component Examples
+details: The modal component is used to hide and show a dialog window with control over the background and the tranistions. It also allows outside click to close and keybind support.
+---
+
+{% capture basicModal %} {% include_relative snippets/basic.html %} {% endcapture %} {% include example.html content=basicModal header="Basic Modal Usage" codeId="basic" %} {% capture advancedModal %}
+{% include_relative snippets/advanced.html %} {% endcapture %} {% include example.html content=advancedModal header="Advanced Modal Usage" codeId="advanced" %}
+
+<script type="text/javascript">
+  const basicCode = `{% include_relative snippets/basic.html %}`
+  const advancedCode = `{% include_relative snippets/advanced.html %}`
+
+  const basicHtml = Prism.highlight(basicCode, Prism.languages.html, 'html')
+  const advancedHtml = Prism.highlight(advancedCode, Prism.languages.html, 'html')
+  document.querySelector('#basic').innerHTML = basicHtml
+  document.querySelector('#advanced').innerHTML = advancedHtml
+</script>

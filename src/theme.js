@@ -6,7 +6,7 @@ const CONSTANTS = {
 }
 
 export default class extends Controller {
-  static targets = ['body']
+  static targets = ['body', 'switch']
   static classes = ['dark']
   static values = {
     storageName: { type: String, default: 'color-theme' },
@@ -27,6 +27,9 @@ export default class extends Controller {
 
     if (theme === CONSTANTS.DARK) {
       this.bodyTarget.classList.add(this.darkClass)
+      if (this.hasSwitchTarget) {
+        this.switchTarget.dataset.switchStatusValue = true
+      }
     }
 
     localStorage.setItem(this.storageNameValue, theme)
