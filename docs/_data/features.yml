@@ -129,9 +129,9 @@
 
 - title: Modal
   order: 4
-  version: Roadmap
+  version: 0.x.0
   details: Ability to show and hide a modal.
-  released: false
+  released: true
   linkName: modal
   icon: >-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-6 w-6 text-white" fill="currentColor">

@@ -5,10 +5,6 @@ header: Notification
 subheader: Notification Component
 details: The notification component is based on a item to show overtop of all other components in a site. This is styled based on TailwindUI. This supports the ability to be manually cleared and/or auto dismissed based on a given wait time.
 permalink: /docs/notification
-previousName: Installation
-previousLink: /docs/installation
-nextName: Theme
-nextLink: /docs/theme
 ---
 
 ## Playground

@@ -34,7 +34,9 @@ links:
     notification: /docs/notification
     theme: /docs/theme
     switch: /docs/switch
+    modal: /docs/modal
   playground:
     notification: /playground/notification
     theme: /playground/theme
     switch: /playground/switch
+    modal: /playground/modal

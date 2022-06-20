@@ -5,10 +5,6 @@ header: Switch
 subheader: Switch Component (Toggle)
 details: The Switch component enables you to show an on/off switch also known as a toggle, that work with the theme component and supports inputs.
 permalink: /docs/switch
-nextName: Installation
-nextLink: /docs/installation
-previousName: switch
-previousLink: /docs/switch
 ---
 
 ## Playground
@@ -55,6 +51,8 @@ Want to see them in action? Check out the examples [here]({{ site.links.playgrou
 | Function | Details                                                       | Syntax                        |
 | -------- | ------------------------------------------------------------- | ----------------------------- |
 | toggle() | This toggle action will toggle the value from its current set | `data-action="switch#toggle"` |
+
+---
 
 ## Basic Usage
 
