@@ -40,6 +40,8 @@ Want to see them in action? Check out the examples [here]({{ site.links.playgrou
 | -------- | ------------------------------------------------------------- | ---------------------------- |
 | toggle() | This toggle button will toggle the theme from its current set | `data-action="theme#toggle"` |
 
+---
+
 ## Basic Usage
 
 ### Common

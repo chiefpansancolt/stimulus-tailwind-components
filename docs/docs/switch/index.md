@@ -52,6 +52,8 @@ Want to see them in action? Check out the examples [here]({{ site.links.playgrou
 | -------- | ------------------------------------------------------------- | ----------------------------- |
 | toggle() | This toggle action will toggle the value from its current set | `data-action="switch#toggle"` |
 
+---
+
 ## Basic Usage
 
 The Switch component if also known as a toggle, allows a user to click and toggle from one side to the other. This supports the ability to pair with the Theme component to create a switch for enabling and disabling Dark Mode. The Switch also support pairing with a input field to set the checked value when the toggle is clicked.
