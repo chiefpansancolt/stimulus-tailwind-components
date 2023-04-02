@@ -3,7 +3,7 @@ const esbuild = require("esbuild")
 esbuild
   .build({
     entryPoints: ["src/index.js"],
-    outfile: "docs/dist/stimulus-tailwind-components.min.js",
+    outfile: "playground/dist/stimulus-tailwind-components.min.js",
     bundle: true,
     legalComments: "eof",
     sourcemap: false,
