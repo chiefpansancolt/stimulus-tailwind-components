@@ -5,6 +5,7 @@ esbuild
     entryPoints: ['src/index.js'],
     outfile: 'docs/dist/stimulus-tailwind-components.min.js',
     bundle: true,
+    legalComments: 'eof',
     sourcemap: false,
     minify: true,
     splitting: false,
