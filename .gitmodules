@@ -1,0 +1,6 @@
+[submodule "playground"]
+	path = playground
+	url = https://github.com/chiefpansancolt/stimulus-tailwind-playground
+[submodule "documentation"]
+	path = documentation
+	url = https://github.com/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev
