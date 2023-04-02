@@ -1,8 +1,8 @@
-import { Controller } from '@hotwired/stimulus'
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ['container']
-  static classes = ['entering', 'enteringTo', 'enteringFrom', 'leaving', 'leavingTo', 'leavingFrom']
+  static targets = ["container"]
+  static classes = ["entering", "enteringTo", "enteringFrom", "leaving", "leavingTo", "leavingFrom"]
   static values = {
     autoDismiss: { type: Boolean, default: false },
     dismissAfter: { type: Number, default: 4000 },

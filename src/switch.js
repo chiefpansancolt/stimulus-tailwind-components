@@ -1,8 +1,17 @@
-import { Controller } from '@hotwired/stimulus'
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ['toggle', 'onIcon', 'offIcon', 'container', 'input']
-  static classes = ['onIcon', 'offIcon', 'onToggle', 'offToggle', 'entering', 'leaving', 'onBackground', 'offBackground']
+  static targets = ["toggle", "onIcon", "offIcon", "container", "input"]
+  static classes = [
+    "onIcon",
+    "offIcon",
+    "onToggle",
+    "offToggle",
+    "entering",
+    "leaving",
+    "onBackground",
+    "offBackground",
+  ]
   static values = {
     enterTimeout: { type: Number, default: 100 },
     leaveTimeout: { type: Number, default: 75 },
@@ -20,7 +29,7 @@ export default class extends Controller {
       this._off()
     }
     if (this.hasInputTarget) {
-      const e = new Event('change')
+      const e = new Event("change")
       this.inputTarget.checked = this.statusValue
       this.inputTarget.dispatchEvent(e)
     }

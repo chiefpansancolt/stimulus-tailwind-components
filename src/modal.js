@@ -1,12 +1,12 @@
-import { Controller } from '@hotwired/stimulus'
+import { Controller } from "@hotwired/stimulus"
 
 const CONSTANTS = {
-  SCROLL: ['fixed', 'inset-x-0', 'overflow-hidden'],
+  SCROLL: ["fixed", "inset-x-0", "overflow-hidden"],
 }
 
 export default class extends Controller {
-  static targets = ['container', 'background', 'view']
-  static classes = ['hide', 'entering', 'leaving', 'toBackground', 'fromBackground', 'toView', 'fromView']
+  static targets = ["container", "background", "view"]
+  static classes = ["hide", "entering", "leaving", "toBackground", "fromBackground", "toView", "fromView"]
   static values = {
     allowClose: { type: Boolean, default: true },
   }

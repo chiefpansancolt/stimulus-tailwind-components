@@ -10,13 +10,11 @@
     "prepublish": "yarn build:prod",
     "lint": "./bin/lint",
     "lint:markdown": "markdownlint .github/**/*.md README.md docs/**/*.md -c .markdownlint.yml",
-    "lint:javascript": "eslint src esbuild.js esbuild-playground.js",
-    "format": "prettier './**/*.{css,js,json,yml,md,html}' --list-different",
-    "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' --write",
+    "lint:javascript": "eslint src esbuild.js esbuild-playground.js prettier.config.js",
+    "format": "prettier './**/*.{css,js,json,yml,md,html}' -l",
+    "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' -w",
     "tailwind:build": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m",
-    "tailwind:watch": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m --watch",
-    "docs:dev": "cd docs && bundle exec jekyll serve",
-    "docs:open": "open http://localhost:4000/stimulus-tailwind-components/"
+    "tailwind:watch": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m --watch"
   },
   "repository": {
     "type": "git",

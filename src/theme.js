@@ -1,22 +1,22 @@
-import { Controller } from '@hotwired/stimulus'
+import { Controller } from "@hotwired/stimulus"
 
 const CONSTANTS = {
-  LIGHT: 'light',
-  DARK: 'dark',
+  LIGHT: "light",
+  DARK: "dark",
 }
 
 export default class extends Controller {
-  static targets = ['body', 'switch']
-  static classes = ['dark']
+  static targets = ["body", "switch"]
+  static classes = ["dark"]
   static values = {
-    storageName: { type: String, default: 'color-theme' },
+    storageName: { type: String, default: "color-theme" },
     useSystemPref: { type: Boolean, default: true },
   }
 
   initialize() {
     let theme = CONSTANTS.LIGHT
     if (this.useSystemPrefValue) {
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
         theme = CONSTANTS.DARK
       }
     }
