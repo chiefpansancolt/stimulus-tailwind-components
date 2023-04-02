@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/chiefpansancolt/stimulus-tailwind-components/issues"
   },
-  "homepage": "https://chiefpansancolt.github.io/stimulus-tailwind-components/",
+  "homepage": "https://stimulus-tailwind.chiefpansancolt.dev/",
   "babel": {},
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1"
