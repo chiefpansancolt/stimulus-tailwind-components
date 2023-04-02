@@ -4,7 +4,7 @@ Looking to contribute here is a guide on how to setup your environment and guide
 
 ## Prerequisites
 
-You will need to have ruby v2.7.0, node v16+ and yarn 1.22 installed.
+You will need to have ruby v3.1.2, node v18+ and yarn 1.22 installed.
 
 Once you download the repo and get into the base of the folder you will need to run the below command to setup your local environment.
 
@@ -21,8 +21,7 @@ Be sure to add an import to the `src/index.js` file like other imports.
 Once added be sure to run the bellow commands to compile.
 
 ```bash
-yarn build:prod
-yarn build:playground
+yarn build
 ```
 
 ## Adding To Existing
@@ -30,8 +29,7 @@ yarn build:playground
 Similily find the file you would like to add to and do so. Once added to then run the below commands to re compile.
 
 ```bash
-yarn build:prod
-yarn build:playground
+yarn build
 ```
 
 ## Documentation
@@ -72,7 +70,7 @@ Before you can commit your changes and create a pull request be sure the follow 
 - [ ] Feature findable in the Documentation site
 - [ ] Playground examples created and added to Doc site
 - [ ] Compilation of output in both docs and dist folders
-- [ ] Linters run `yarn format` and `yarn lint:javascript` and `yarn lint:markdown` all must not have errors
+- [ ] Linters run `yarn lint` and all must not have errors
 
 ## Conclusion
 
