@@ -22,7 +22,7 @@ Check out the [roadmap](https://github.com/users/chiefpansancolt/projects/3) to 
 
 ## Installation
 
-Check out our documentation [here](https://stimulus-tailwind.chiefpansancolt.dev/docs/docs/installation) for full details on how to add to your project!
+Check out our documentation [here](https://stimulus-tailwind.chiefpansancolt.dev/docs/installation) for full details on how to add to your project!
 
 ## Examples/Playground
 
