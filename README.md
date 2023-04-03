@@ -7,28 +7,30 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/chiefpansancolt/stimulus-tailwind-components?label=Release&logo=github&style=for-the-badge)
 [![Discord](https://img.shields.io/discord/450095227185659905?color=yellow&label=Discord&logo=discord&style=for-the-badge)](https://discord.gg/pBxGpfrmD4)
 
-This package contains pre built stimulus controllers for common [tailwindcss](https://tailwindcss.com) based components inspired by [TailwindUI](https://tailwindui.com) to help save you the time from having to build on every project you may need it on.
+This package contains pre built stimulus controllers for common [tailwindcss](https://tailwindcss.com) based components inspired by [TailwindUI](https://tailwindui.com) and [HeadlessUI](https://headlessui.com/) to help save you the time from having to build on every project you may need it on.
 
 Currently supports:
 
-- [Notification(s)](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/notification)
-- [Theme](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/theme)
+- [Notification(s)](https://stimulus-tailwind.chiefpansancolt.dev/docs/features/notification)
+- [Theme](https://stimulus-tailwind.chiefpansancolt.dev/docs/features/theme)
+- [Switch](https://stimulus-tailwind.chiefpansancolt.dev/docs/features/switch)
+- [Modal](https://stimulus-tailwind.chiefpansancolt.dev/docs/features/modal)
 
 ## Roadmap
 
-Check out the [roadmap](https://github.com/chiefpansancolt/stimulus-tailwind-components/projects/1) to see what other features and/or fixes are coming down the pipeline for this project!
+Check out the [roadmap](https://github.com/users/chiefpansancolt/projects/3) to see what other features and/or fixes are coming down the pipeline for this project!
 
 ## Installation
 
-Check out our documentation [here](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/installation) for full details on how to add to your project!
+Check out our documentation [here](https://stimulus-tailwind.chiefpansancolt.dev/docs/installation) for full details on how to add to your project!
 
 ## Examples/Playground
 
-Checkout a live demo of examples [here](https://chiefpansancolt.github.io/stimulus-tailwind-components/playground/home).
+Checkout a live demo of examples [here](https://chiefpansancolt.github.io/stimulus-tailwind-playground/).
 
 ## Change Log
 
-Check out the [Change Log](https://chiefpansancolt.github.io/stimulus-tailwind-components/docs/change_log) for new breaking changes/features/bug fixes per release of a new and past versions.
+Check out the [Change Log](https://stimulus-tailwind.chiefpansancolt.dev/docs/change_log) for new breaking changes/features/bug fixes per release of a new and past versions.
 
 ## Contributing
 

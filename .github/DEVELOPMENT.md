@@ -4,7 +4,7 @@ Looking to contribute here is a guide on how to setup your environment and guide
 
 ## Prerequisites
 
-You will need to have ruby v2.7.0, node v16+ and yarn 1.22 installed.
+You will need to have ruby v3.1.2, node v18+ and yarn 1.22 installed.
 
 Once you download the repo and get into the base of the folder you will need to run the below command to setup your local environment.
 
@@ -21,8 +21,7 @@ Be sure to add an import to the `src/index.js` file like other imports.
 Once added be sure to run the bellow commands to compile.
 
 ```bash
-yarn build:prod
-yarn build:playground
+yarn build
 ```
 
 ## Adding To Existing
@@ -30,35 +29,37 @@ yarn build:playground
 Similily find the file you would like to add to and do so. Once added to then run the below commands to re compile.
 
 ```bash
-yarn build:prod
-yarn build:playground
+yarn build
 ```
 
 ## Documentation
 
-Documentation should include any classes, targets, values and actions available. Then detail example usages. See existing docs for examples.
+Documentation should include any classes, targets, values and actions available. Then detail example usages. You can also include implementation of a feature in another language like Ruby on Rails and such. See existing docs for examples.
 
-A doc should be added to the `docs/docs/feature-name/index.md` file
+A doc should be added to the `documentation/docs/features/<feature-name>.md` file
 
 To Test the doc be sure to run the below commands
 
 ```bash
-yarn tailwind:build
-yarn docs:dev
-yarn docs:open
+cd documentation
+yarn install
+yarn dev
 ```
 
-Then navigate to your new doc, if you do not see your feature listed then be sure to enable or add it to the navigation and feature data files found in `docs/_data/features.yml` and/or `docs/_data/navigations.yml`.
+Then navigate to your new doc, if you do not see your feature listed then be sure to enable or add it to the navigation and feature data files found in `src/pages/index.md` and/or `src/data/navigations.js`.
 
 ## Playground
 
 The playground is a place to create examples and test to ensure the feature addition or change is working as expected.
 
-To add be sure to create a new file to build in, in a folder as follows `docs/playground/feature-name/index.html` also if adding a new controller be sure to registar in the `docs/_layouts/default.html` file for the docs/playground site.
+To add be sure to create a new file to build in, in a folder as follows `playground/playground/<feature-name>/index.html` also if adding a new controller be sure to registar in the `docs/_layouts/default.html` file for the playground site. Next you will need to enable the feature in the features file in `_data/features.yml`. See other examples in the playground folder for features and how to build.
 
 To view and play in the playground from the below in all seperate terminal windows.
 
 ```bash
+cd playground
+yarn install
+bundle install
 yarn tailwind:watch
 yarn docs:dev
 yarn docs:open
@@ -68,11 +69,11 @@ yarn docs:open
 
 Before you can commit your changes and create a pull request be sure the follow checklist is completed and all are passed.
 
-- [ ] Is documentation add/or updated accordingly
+- [ ] Is documentation added and/or updated accordingly
 - [ ] Feature findable in the Documentation site
-- [ ] Playground examples created and added to Doc site
-- [ ] Compilation of output in both docs and dist folders
-- [ ] Linters run `yarn format` and `yarn lint:javascript` and `yarn lint:markdown` all must not have errors
+- [ ] Playground examples created and added to playground site
+- [ ] Compilation of output in both playground and dist folders
+- [ ] Linters run `yarn lint` and all must not have errors
 
 ## Conclusion
 

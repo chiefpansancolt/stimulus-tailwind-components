@@ -10,13 +10,11 @@
     "prepublish": "yarn build:prod",
     "lint": "./bin/lint",
     "lint:markdown": "markdownlint .github/**/*.md README.md docs/**/*.md -c .markdownlint.yml",
-    "lint:javascript": "eslint src esbuild.js esbuild-playground.js",
-    "format": "prettier './**/*.{css,js,json,yml,md,html}' --list-different",
-    "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' --write",
+    "lint:javascript": "eslint src esbuild.js esbuild-playground.js prettier.config.js",
+    "format": "prettier './**/*.{css,js,json,yml,md,html}' -l",
+    "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' -w",
     "tailwind:build": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m",
-    "tailwind:watch": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m --watch",
-    "docs:dev": "cd docs && bundle exec jekyll serve",
-    "docs:open": "open http://localhost:4000/stimulus-tailwind-components/"
+    "tailwind:watch": "tailwindcss -c docs/tailwind.config.js -i docs/assets/application.css -o docs/dist/tailwind.min.css -m --watch"
   },
   "repository": {
     "type": "git",
@@ -36,25 +34,25 @@
   "bugs": {
     "url": "https://github.com/chiefpansancolt/stimulus-tailwind-components/issues"
   },
-  "homepage": "https://chiefpansancolt.github.io/stimulus-tailwind-components/",
+  "homepage": "https://stimulus-tailwind.chiefpansancolt.dev/",
   "babel": {},
   "dependencies": {
-    "@hotwired/stimulus": "^3.0.1"
+    "@hotwired/stimulus": "^3.2.1"
   },
   "peerDependencies": {
     "@hotwired/stimulus": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/eslint-parser": "^7.18.2",
-    "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/typography": "^0.5.2",
-    "esbuild": "^0.14.43",
-    "eslint": "^8.17.0",
-    "eslint-config-prettier": "^8.5.0",
-    "markdownlint": "^0.25.1",
-    "prettier": "^2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.11",
-    "tailwindcss": "^3.1.2"
+    "@babel/core": "^7.21.4",
+    "@babel/eslint-parser": "^7.21.3",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "esbuild": "^0.17.15",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "markdownlint": "^0.28.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "tailwindcss": "^3.3.1"
   }
 }

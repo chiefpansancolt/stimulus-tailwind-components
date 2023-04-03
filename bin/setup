@@ -11,8 +11,17 @@ echo "== Running Yarn Install =="
 yarn install
 
 echo ""
-echo "== Running Bundle Install =="
-cd docs && bundle package
+echo "== Running Documentation Install =="
+cd documentation
+yarn install
+cd ..
+
+echo ""
+echo "== Running Playground Install =="
+cd playground
+bundle install
+yarn install
+cd ..
 
 echo ""
 echo "== Setup Finished =="
