@@ -26,7 +26,7 @@ Check out our documentation [here](https://stimulus-tailwind.chiefpansancolt.dev
 
 ## Examples/Playground
 
-Checkout a live demo of examples [here](https://chiefpansancolt.github.io/stimulus-tailwind-playground/).
+Checkout a live demo of examples [here](https://stimulus-tailwind-play.chiefpansancolt.dev).
 
 ## Change Log
 
