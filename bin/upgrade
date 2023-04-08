@@ -4,11 +4,18 @@ echo "== Upgrade Starting =="
 
 echo ""
 echo "== Running Yarn Upgrade =="
-yarn upgrade
+yarn upgrade --latest
 
 echo ""
-echo "== Running Bundle Upgrade =="
-cd docs && bundle upgrade
+echo "== Running Update for Documentation =="
+cd documentation
+yarn upgrade --latest
+
+echo ""
+echo "== Running Update for Playground =="
+cd playground
+bundle update
+yarn upgrade --latest
 
 echo ""
 echo "== Upgrade Finished =="

@@ -21,3 +21,13 @@ fi
 
 echo ""
 echo "== Linting Complete =="
+
+echo ""
+echo "== Lint Documentation =="
+cd documentation
+yarn lint
+
+echo ""
+echo "== Lint Playground =="
+cd playground
+yarn lint
