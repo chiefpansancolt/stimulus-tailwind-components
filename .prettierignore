@@ -10,3 +10,5 @@ bin/
 docs/_site
 docs/dist
 docs/vendor
+documentation/
+playground/
