@@ -4,11 +4,11 @@ echo "== Starting Build =="
 
 echo ""
 echo "== Building Output =="
-yarn build:prod
+pnpm build:prod
 
 echo ""
 echo "== Building Output for Documentation Site =="
-yarn build:playground
+pnpm build:playground
 
 echo ""
 echo "== Building Complete =="

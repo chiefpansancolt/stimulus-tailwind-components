@@ -35,22 +35,22 @@
   "homepage": "https://stimulus-tailwind.chiefpansancolt.dev/",
   "babel": {},
   "dependencies": {
-    "@hotwired/stimulus": "^3.2.1"
+    "@hotwired/stimulus": "^3.2.2"
   },
   "peerDependencies": {
     "@hotwired/stimulus": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/eslint-parser": "^7.21.3",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.9",
-    "esbuild": "^0.17.15",
-    "eslint": "^8.37.0",
-    "eslint-config-prettier": "^8.8.0",
-    "markdownlint": "^0.28.0",
-    "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.6",
-    "tailwindcss": "^3.3.1"
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.3",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "esbuild": "^0.19.7",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "markdownlint": "^0.32.1",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5"
   }
 }
