@@ -7,7 +7,7 @@
     "build": "./bin/build",
     "build:playground": "node ./esbuild-playground.js",
     "build:prod": "node ./esbuild.js",
-    "prepublish": "yarn build:prod",
+    "prepublish": "pnpm build:prod",
     "lint": "./bin/lint",
     "lint:markdown": "markdownlint .github/**/*.md README.md -c .markdownlint.yml",
     "lint:javascript": "eslint src esbuild.js esbuild-playground.js prettier.config.js",
