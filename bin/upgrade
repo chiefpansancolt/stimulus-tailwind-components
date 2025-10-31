@@ -3,19 +3,19 @@
 echo "== Upgrade Starting =="
 
 echo ""
-echo "== Running Yarn Upgrade =="
-yarn upgrade --latest
+echo "== Running pnpm Upgrade =="
+pnpm upgrade --latest
 
 echo ""
 echo "== Running Update for Documentation =="
 cd documentation
-yarn upgrade --latest
+pnpm upgrade --latest
 
 echo ""
 echo "== Running Update for Playground =="
 cd playground
 bundle update
-yarn upgrade --latest
+pnpm upgrade --latest
 
 echo ""
 echo "== Upgrade Finished =="

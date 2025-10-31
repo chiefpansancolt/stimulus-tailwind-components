@@ -4,7 +4,7 @@ Looking to contribute here is a guide on how to setup your environment and guide
 
 ## Prerequisites
 
-You will need to have ruby v3.1.2, node v18+ and yarn 1.22 installed.
+You will need to have ruby v3.1.2, node v22+ and pnpm 10 installed.
 
 Once you download the repo and get into the base of the folder you will need to run the below command to setup your local environment.
 
@@ -21,7 +21,7 @@ Be sure to add an import to the `src/index.js` file like other imports.
 Once added be sure to run the bellow commands to compile.
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ## Adding To Existing
@@ -29,7 +29,7 @@ yarn build
 Similily find the file you would like to add to and do so. Once added to then run the below commands to re compile.
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ## Documentation
@@ -42,8 +42,8 @@ To Test the doc be sure to run the below commands
 
 ```bash
 cd documentation
-yarn install
-yarn dev
+pnpm install
+pnpm dev
 ```
 
 Then navigate to your new doc, if you do not see your feature listed then be sure to enable or add it to the navigation and feature data files found in `src/pages/index.md` and/or `src/data/navigations.js`.
@@ -58,11 +58,11 @@ To view and play in the playground from the below in all seperate terminal windo
 
 ```bash
 cd playground
-yarn install
+pnpm install
 bundle install
-yarn tailwind:watch
-yarn docs:dev
-yarn docs:open
+pnpm tailwind:watch
+pnpm docs:dev
+pnpm docs:open
 ```
 
 ## Commiting your Changes
@@ -73,7 +73,7 @@ Before you can commit your changes and create a pull request be sure the follow 
 - [ ] Feature findable in the Documentation site
 - [ ] Playground examples created and added to playground site
 - [ ] Compilation of output in both playground and dist folders
-- [ ] Linters run `yarn lint` and all must not have errors
+- [ ] Linters run `pnpm lint` and all must not have errors
 
 ## Conclusion
 

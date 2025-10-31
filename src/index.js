@@ -1,5 +1,5 @@
-/*! Stimulus Tailwind Components 0.5.0
-Copyright © 2023 Christopher Pezza (Chiefpansancolt)
+/*! Stimulus Tailwind Components 0.5.1
+Copyright © 2025 Christopher Pezza (Chiefpansancolt)
 */
 
 export { default as Notification } from "./notification"
