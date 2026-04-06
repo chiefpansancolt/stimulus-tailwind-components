@@ -41,7 +41,7 @@ jobs:
         run: pnpm build:prod
 
       - name: Upload Compiled JS
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: stimulus-tailwind-components.min.js
           path: dist/
