@@ -10,7 +10,7 @@
     "prepublish": "pnpm build:prod",
     "lint": "./bin/lint",
     "lint:markdown": "markdownlint .github/**/*.md README.md -c .markdownlint.yml",
-    "lint:javascript": "eslint src esbuild.js esbuild-playground.js prettier.config.js",
+    "lint:javascript": "eslint src esbuild.js esbuild-playground.js prettier.config.js eslint.config.js",
     "format": "prettier './**/*.{css,js,json,yml,md,html}' -l",
     "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' -w"
   },
@@ -42,13 +42,13 @@
   },
   "devDependencies": {
     "@babel/core": "^8.0.6",
-    "@babel/eslint-parser": "^7.29.9",
+    "@babel/eslint-parser": "^8.0.6",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.20",
     "esbuild": "^0.28.2",
     "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
-    "markdownlint": "^0.41.1",
+    "markdownlint-cli": "^0.49.1",
     "prettier": "^3.9.8",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3"

@@ -22,11 +22,11 @@ Check out the [roadmap](https://github.com/users/chiefpansancolt/projects/3) to 
 
 ## Installation
 
-Check out our documentation [here](https://stimulus-tailwind.chiefpansancolt.dev/docs/installation) for full details on how to add to your project!
+Check out [our documentation](https://stimulus-tailwind.chiefpansancolt.dev/docs/installation) for full details on how to add to your project!
 
 ## Examples/Playground
 
-Checkout a live demo of examples [here](https://stimulus-tailwind-play.chiefpansancolt.dev).
+Checkout [a live demo of examples](https://stimulus-tailwind-play.chiefpansancolt.dev).
 
 ## Change Log
 
@@ -45,7 +45,7 @@ To see more about Contributing check out this [document](https://github.com/chie
 
 ## Development
 
-Checkout our development guide [here](https://github.com/chiefpansancolt/stimulus-tailwind-components/blob/main/.github/DEVELOPMENT.md) to see how you can commit to the repo.
+Checkout [our development guide](https://github.com/chiefpansancolt/stimulus-tailwind-components/blob/main/.github/DEVELOPMENT.md) to see how you can commit to the repo.
 
 _**NOTE: Do not commit any changes made in dist folder from compiling as this will be performed by the owner before building of a release.**_
 
