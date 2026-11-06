@@ -17,7 +17,7 @@ importers:
         version: 8.1.0
       '@babel/eslint-parser':
         specifier: ^8.0.6
-        version: 8.0.6(@babel/core@8.1.0)(eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0))
+        version: 8.0.6(@babel/core@8.1.0)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))
       '@tailwindcss/forms':
         specifier: ^0.5.11
         version: 0.5.11(tailwindcss@4.3.3)
@@ -29,10 +29,10 @@ importers:
         version: 0.28.2
       eslint:
         specifier: ^10.11.0
-        version: 10.11.0(jiti@1.21.7)(supports-color@7.2.0)
+        version: 10.14.0(jiti@1.21.7)(supports-color@7.2.0)
       eslint-config-prettier:
         specifier: ^10.1.8
-        version: 10.1.8(eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0))
+        version: 10.1.8(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))
       markdownlint-cli:
         specifier: ^0.49.1
         version: 0.49.1(supports-color@7.2.0)
@@ -2309,8 +2309,8 @@ packages:
     resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  eslint@10.11.0:
-    resolution: {integrity: sha512-P7a6UEEqb9G95MYAtqkmsTbVXIYyzIfl6NGOIJk162PaahFxFyeGcrlXYFSiagECg4sEm8IseJdZBKR3rx6MsQ==}
+  eslint@10.14.0:
+    resolution: {integrity: sha512-T0pNsxkb9IKmtQjhpK3d7nWOpFv+YHuMbTJnSVMoQblF0onvXfErrtp4V1jHtsQPan7dKaGVD0q1WCXnzMF31A==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     hasBin: true
     peerDependencies:
@@ -4764,10 +4764,10 @@ snapshots:
       obug: 3.0.0
       verkit: 0.5.0
 
-  '@babel/eslint-parser@8.0.6(@babel/core@8.1.0)(eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0))':
+  '@babel/eslint-parser@8.0.6(@babel/core@8.1.0)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))':
     dependencies:
       '@babel/core': 8.1.0
-      eslint: 10.11.0(jiti@1.21.7)(supports-color@7.2.0)
+      eslint: 10.14.0(jiti@1.21.7)(supports-color@7.2.0)
       eslint-scope: 9.1.2
       eslint-visitor-keys: 5.0.1
       verkit: 0.3.2
@@ -5013,9 +5013,9 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.10.1(eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0))':
+  '@eslint-community/eslint-utils@4.10.1(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))':
     dependencies:
-      eslint: 10.11.0(jiti@1.21.7)(supports-color@7.2.0)
+      eslint: 10.14.0(jiti@1.21.7)(supports-color@7.2.0)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/eslint-utils@4.10.1(eslint@8.38.0(supports-color@7.2.0))':
@@ -7389,9 +7389,9 @@ snapshots:
       - eslint-plugin-import-x
       - supports-color
 
-  eslint-config-prettier@10.1.8(eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0)):
+  eslint-config-prettier@10.1.8(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0)):
     dependencies:
-      eslint: 10.11.0(jiti@1.21.7)(supports-color@7.2.0)
+      eslint: 10.14.0(jiti@1.21.7)(supports-color@7.2.0)
 
   eslint-import-resolver-node@0.3.10(supports-color@7.2.0):
     dependencies:
@@ -7517,9 +7517,9 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0):
+  eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.11.0(jiti@1.21.7)(supports-color@7.2.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))
       '@eslint-community/regexpp': 4.12.2
       '@eslint/config-array': 0.23.5(supports-color@7.2.0)
       '@eslint/config-helpers': 0.7.0
