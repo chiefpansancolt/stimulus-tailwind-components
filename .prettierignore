@@ -12,3 +12,4 @@ docs/dist
 docs/vendor
 documentation/
 playground/
+pnpm-lock.yaml
